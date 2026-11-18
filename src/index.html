@@ -1,25 +1,69 @@
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Галерея фотографій</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>LUMI | Photo Gallery</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <h1>FOTO IMAGE LIST</h1>
+  <main class="container">
+
+    <header class="header">
+      <p class="subtitle">YOUR LITTLE SPACE FOR INSPIRATION</p>
+
+      <h1>LUMI<span>.</span></h1>
+
+      <p class="description">
+        Колекція випадкових моментів, які варто побачити.
+      </p>
     </header>
-    <main>
-        <div id="gallery" class="gallery"></div>
-        <div class="buttons">
-            <button id="loadMore">Завантажити ще 4 картинки</button>
-            <button id="clearGallery">Очистити галерею</button>
-            <button id="removeLast">Видалити останню картинку</button>
-            <button id="reverseGallery">Перевернути галерею</button>
-            <button id="shuffleGallery">Перемішати галерею</button>
-        </div>
-    </main>
-    <script src="script.js"></script>
+
+
+    <section class="gallery-section">
+
+      <div class="gallery-info">
+        <h2>Photo collection</h2>
+        <span id="photoCount">0 фотографій</span>
+      </div>
+
+
+      <div id="gallery" class="gallery"></div>
+
+      <p id="message" class="message"
+         role="status" aria-live="polite"></p>
+
+      <div class="controls">
+
+        <button id="loadBtn" class="btn btn-primary">
+          + Завантажити ще 4
+        </button>
+
+        <button id="clearBtn" class="btn">
+          Очистити галерею
+        </button>
+
+        <button id="removeBtn" class="btn">
+          Видалити останню
+        </button>
+
+        <button id="reverseBtn" class="btn">
+          Перевернути галерею
+        </button>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>LUMI GALLERY © 2026</p>
+      <p>Made with creativity & JavaScript</p>
+    </footer>
+
+  </main>
 </body>
 </html>
